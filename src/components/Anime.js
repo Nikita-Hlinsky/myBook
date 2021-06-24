@@ -18,7 +18,7 @@ export default function Anime() {
         axios.get(url)
             .then(res => {
                 setPosts(res.data)
-                // console.log(res.data)
+                console.log(res.data)
             })
 
     }, [url])
