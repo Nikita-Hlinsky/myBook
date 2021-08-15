@@ -41,19 +41,19 @@ function CardList() {
           birthDate: 'Unknown',
           imgUrl: 'https://vignette.wikia.nocookie.net/breakingbad/images/b/b7/HankS5.jpg/revision/latest/scale-to-width-down/700?cb=20120620014136',
           liveStatus: 'Deceased',
-        }
+      }
     ]
 
     const charList = listOfChars.map(chars => {
         return (
-            <Card listOfChars={chars} key={chars.id}/>
+          <Card listOfChars={chars} key={chars.id}/>
         )
     })
 
     return (
-        <div className={style.CardList}>
-            { charList }
-        </div>
+      <div className={style.CardList}>
+        { charList }
+      </div>
     )
 }
 
